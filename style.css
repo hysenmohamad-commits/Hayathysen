@@ -824,3 +824,97 @@ section {
     grid-template-columns: 1fr;
   }
 }
+/* Form Styles */
+.pt-xl {
+  padding-top: calc(var(--space-xl) * 1.5);
+  padding-bottom: var(--space-xl);
+}
+
+.mb-xl {
+  margin-bottom: var(--space-xl);
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--color-white);
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+[data-theme="dark"] .form-container {
+  border-color: rgba(255,255,255,0.05);
+  background-color: var(--color-bg-alt);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.form-group label {
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--color-bg-alt);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+[data-theme="dark"] .form-group input,
+[data-theme="dark"] .form-group textarea {
+  border-color: rgba(255,255,255,0.1);
+  background-color: var(--color-bg);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-terracotta);
+  box-shadow: 0 0 0 3px rgba(217,108,81,0.1);
+}
+
+.form-submit {
+  width: 100%;
+  margin-top: var(--space-sm);
+}
+
+/* Footer Email Button */
+.btn-email-footer {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: var(--space-sm);
+  padding: 0.6rem 1.3rem;
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--color-terracotta);
+  color: var(--color-terracotta);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: var(--transition);
+  background: transparent;
+}
+
+.btn-email-footer:hover {
+  background-color: var(--color-terracotta);
+  color: #fff;
+  transform: translateY(-2px);
+}
